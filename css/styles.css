@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #840000 url(https://www.diseñowebs.com.ar/imagenes/fondo.jpg) no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 0;
+    width: 100%;
+	height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li {
+    background: #AA2726;
+    padding: 9px 17px;
+    border-radius: 13px;
+    -moz-box-shadow: 1px 1px 4px #000;
+    -webkit-box-shadow: 1px 1px 4px #000;
+    box-shadow: 1px 1px 4px #000;
+}
+
+nav a {
+    display: block;
+    font-family: 'Chewy', cursive;
+    color: #ECDF95;
+    font-size: 1.13em;
+    letter-spacing: .13em;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+    margin-right: 13px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav li:hover {
+    background:#ECDF95;
+
+}
+
+nav a:hover {
+    color: #840000;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 22px;
+}
+
+#welcome-section {
+    padding-top: 40vh;
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    padding: 13px 22px;
+    margin: 33px auto 99px;
+}
+
+.stuff {
+    display: flex;
+}
+
+.stuff a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #AA2726;
+    padding: 13px 22px;
+    border: 1px solid #840000;
+    border-radius: 13px;
+    text-decoration: none;
+    -moz-box-shadow: 1px 1px 4px #000;
+    -webkit-box-shadow: 1px 1px 4px #000;
+    box-shadow: 1px 1px 4px #000;
+    width: 18vw;
+    height: auto;
+    min-height: 213px;
+}
+
+.stuff a:hover {
+    background: #840000;
+    border: 1px solid #AA2726;
+    transform: scale(1.13 , 1.13);
+    transform-origin: center;
+    transition-timing-function: ease-in-out;
+}
+
+.stuff a img {
+    width: 100%;
+    max-width: 199px;
+    height: auto;
+    margin-bottom: 13px;
+    border: 2px solid #fff;
+    -moz-box-shadow: 1px 1px 4px #000;
+    -webkit-box-shadow: 1px 1px 4px #000;
+    box-shadow: 1px 1px 4px #000;
+}
+
+.stuff figurecaption {
+    display: block;
+    font-family: 'Chewy', cursive;
+    font-size: 1.6em;
+    color: #ECDF95;
+    letter-spacing: .03em;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+
+h1 {
+    color: #FFFFCC;
+    font-size: 1.6em;
+    letter-spacing: .02em;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+    margin: 13px auto;
+}
+
+h2 {
+    color: #E0BF5D;
+    font-size: 2em;
+    letter-spacing: .02em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+    margin: 13px auto;
+}
+
+p {
+    font-family: Arial;
+    font-size: 1.3em;
+    color: #ECDF95;
+    font-weight: 600;
+    letter-spacing: .03em;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+
+footer {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    color: #E0BF5D;
+    font-weight: 800;
+    line-height: 1.6em;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ECDF95;
+}
+
+@media (max-width: 999px) {
+    header {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #welcome-section {
+        padding-top: 22px;
+        height: auto;
+    }
+
+    .stuff {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .stuff a {
+        width: 70vw;
+    }
+}
+
+
+@media (max-width: 430px) {
+    nav a {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 345px) {
+    h1 {
+        font-size: 1.8em;
+    }
+}
